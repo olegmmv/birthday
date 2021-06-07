@@ -30,9 +30,21 @@
 
     /* changing info */
     const descTitle = document.querySelector('.desc-title');
+    const strengthBlock = document.querySelector('.strength');
+    const charismaBlock = document.querySelector('.charisma');
+    const agilityBlock = document.querySelector('.agility');
+    const charmBlock = document.querySelector('.charm');
+    const luckBlock = document.querySelector('.luck');
+
     const changeInfo = (key) => {
-        const desc = descriptions[key];
-        descTitle.innerHTML = desc.title;
+        const { title, strength, charisma, agility, charm, luck } = descriptions[key];
+        descTitle.innerHTML = title;
+
+        strengthBlock.innerHTML = `Сила – ${strength}`;
+        charismaBlock.innerHTML = `Харизма – ${charisma}`;
+        agilityBlock.innerHTML = `Ловкость – ${agility}`;
+        charmBlock.innerHTML = `Обаяние – ${charm}`;
+        luckBlock.innerHTML = `Удача – ${luck}`;
     };
 
     /* selecting hero */

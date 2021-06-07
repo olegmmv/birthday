@@ -50,6 +50,17 @@
     padding: 20px;
 }
 
+.desc-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.desc-ability {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: .9rem;
+}
+
 .blinking {
     animation: blink 1s steps(4, start) infinite;
 }

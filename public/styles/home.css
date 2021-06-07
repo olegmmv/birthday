@@ -29,8 +29,16 @@
     font-family: inherit;
     padding: 10px 40px;
 }
-.start-btn:active {
+.start-btn:hover, .start-btn:active {
     border-color: var(--color-pink);
     border-bottom-color: var(--color-purple);
     border-right-color: var(--color-purple);
+}
+
+@media screen and (min-width: 769px) {
+    .start-btn:hover {
+        border-color: var(--color-pink);
+        border-top-color: var(--color-purple);
+        border-left-color: var(--color-purple);
+    }
 }

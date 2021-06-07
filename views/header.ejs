@@ -11,8 +11,7 @@
         <header class="header-wrapper">
             <div class="header">
                 <a href="/" class="header__link">Туса</a>
-                <a href="/menu" class="header__link">Меню</a>    
+                <a href="/menu" class="header__link">Меню</a>
             </div>
         </header>
-        <main class="content">
-
+        <main class="content <% if (locals.back) { %>content_back<% } %>">

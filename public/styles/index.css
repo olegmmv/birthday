@@ -1,3 +1,6 @@
+@import url('./home.css');
+@import url('./menu.css');
+
 @font-face {
     font-family: 'PressStart2P';
     font-display: swap;
@@ -6,6 +9,8 @@
 
 :root {
     --color-green: rgb(17, 238, 17);
+    --color-pink: rgb(219, 107, 204);
+    --color-purple: rgb(138 37 117);
 }
 
 * {
@@ -13,12 +18,15 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
 body {
     font-family: PressStart2P, 'Courier New', monospace;
     color: var(--color-green);
-    background: center / cover no-repeat url('../images/city-gif.gif') ;
-
-    min-height: 100vh;
+    display: flex;
 }
 
 .header-wrapper {
@@ -42,16 +50,11 @@ body {
 
 .content {
     padding-top: 96px;
-}
-
-.menu {
-    width: 100%;
+    flex-grow: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
-.menu__img {
-    max-width: 90vw;
-    max-height: 80vh;
+.content_back {
+    background: center / cover no-repeat url('../images/night.gif');
 }
   

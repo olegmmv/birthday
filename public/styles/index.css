@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'PressStart2P';
+    font-display: swap;
+    src: url('../fonts/PressStart2P.ttf')
+}
+
+:root {
+    --color-green: rgb(17, 238, 17);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: PressStart2P, 'Courier New', monospace;
+    color: var(--color-green);
+    background: center / cover no-repeat url('../images/city-gif.gif') ;
+
+    min-height: 100vh;
+}
+
+.header-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 40px 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    max-width: min(90vw, 60vh);
+    margin: 0 auto;
+}
+.header__link {
+    color: var(--color-green);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content {
+    padding-top: 96px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__img {
+    max-width: 90vw;
+    max-height: 80vh;
+}
+  

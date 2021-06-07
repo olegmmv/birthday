@@ -1,0 +1,27 @@
+<%- include('header') -%>
+<div class="heroes-page">
+    <div class="heroes-page__title fadeInUp blinking">Выбери своего героя</div>
+    <div class="heroes-avatars">
+        <div class="heroes-wrapper fadeInRightBig">
+            <input id="radio-oleg" type="radio" name="hero" class="radio" value="oleg" hidden />
+            <label for="radio-oleg" class="hero-avatar hero-avatar_purple">
+                <img
+                    src="../public/images/oleg.PNG"
+                    class="avatar-margin"
+                    alt="Oleg"
+                    height="110"
+                />
+            </label>
+
+            <input id="radio-asya" type="radio" name="hero" class="radio" value="asya" hidden />
+            <label for="radio-asya" class="hero-avatar hero-avatar_green">
+                <img src="../public/images/asya.PNG" alt="Asya" width="100" />
+            </label>
+        </div>
+    </div>
+    <div class="desc">
+        <div class="desc-title"></div>
+    </div>
+</div>
+<script src="../public/scripts/heroes.js"></script>
+<%- include('footer') -%>

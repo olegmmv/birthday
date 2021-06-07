@@ -1,0 +1,118 @@
+.heroes-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroes-page__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.heroes-avatars {
+    width: min(90vw, 70vh);
+    padding: 10px;
+    border: 2px solid var(--color-green);
+    border-left: none;
+    border-right: none;
+}
+
+.heroes-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-avatar {
+    border: 3px solid #fff;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.radio:checked + .hero-avatar {
+    animation: borderFlashing .5s infinite both;
+}
+.hero-avatar_green {
+    background-color: rgb(24 79 68);
+}
+.hero-avatar_purple {
+    background-color: rgb(160 30 142);
+}
+
+.avatar-margin {
+    margin-left: 10px;
+}
+
+.desc {
+    padding: 20px;
+}
+
+.blinking {
+    animation: blink 1s steps(4, start) infinite;
+}
+
+.fadeInUp {
+    animation: fadeInUp .5s .5s both;
+}
+
+.fadeInRightBig {
+    animation: fadeInRightBig .5s 1s both;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 200%, 0);
+      transform: translate3d(0, 200%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInRightBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(2000px, 0, 0);
+      transform: translate3d(2000px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes borderFlashing {
+    0% {
+        border-color: #f00;
+    }
+    49% {
+        border-color: #f00;
+    }
+    50% {
+        border-color: #fff;
+    }
+    100% {
+        border-color: #fff;
+    }
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .heroes-page__title {
+        font-size: 1.3rem;
+    }
+}

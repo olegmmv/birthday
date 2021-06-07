@@ -24,9 +24,11 @@ fastify.setNotFoundHandler(async (request, reply) => {
 fastify.get('/', async (request, reply) => {
     return reply.view('index');
 });
-
 fastify.get('/menu', async (request, reply) => {
     return reply.view('menu');
+});
+fastify.get('/heroes', async (request, reply) => {
+    return reply.view('heroes');
 });
 
 const start = async () => {

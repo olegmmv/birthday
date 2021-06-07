@@ -1,16 +1,18 @@
 @import url('./home.css');
 @import url('./menu.css');
+@import url('./heroes.css');
 
 @font-face {
     font-family: 'PressStart2P';
     font-display: swap;
-    src: url('../fonts/PressStart2P.ttf')
+    src: url('../fonts/PressStart2P.ttf');
 }
 
 :root {
     --color-green: rgb(17, 238, 17);
     --color-pink: rgb(219, 107, 204);
     --color-purple: rgb(138 37 117);
+    --animate-duration: 2s;
 }
 
 * {
@@ -39,7 +41,7 @@ body {
 .header {
     display: flex;
     justify-content: space-around;
-    max-width: min(90vw, 60vh);
+    max-width: min(90vw, 70vh);
     margin: 0 auto;
 }
 .header__link {

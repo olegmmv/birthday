@@ -69,12 +69,13 @@
 
 .desc-ability {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-size: .8rem;
 }
 @media screen and (min-width: 769px) {
     .desc-ability {
         font-size: 1rem;
+        margin-bottom: 6px;
     }
 }
 
@@ -83,7 +84,7 @@
     font-size: .9rem;
 }
 .desc-specials li {
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 15px;
     font-size: .8rem;
 }
@@ -92,6 +93,7 @@
         font-size: 1.1rem;
     }
     .desc-specials li  {
+        margin-top: 12px;
         font-size: 1rem;
     }
 }

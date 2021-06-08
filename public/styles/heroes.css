@@ -72,6 +72,11 @@
     margin-bottom: 5px;
     font-size: .8rem;
 }
+@media screen and (min-width: 769px) {
+    .desc-ability {
+        font-size: 1rem;
+    }
+}
 
 .desc-specials {
     margin-top: 20px;
@@ -81,6 +86,14 @@
     margin-top: 10px;
     margin-left: 15px;
     font-size: .8rem;
+}
+@media screen and (min-width: 769px) {
+    .desc-specials  {
+        font-size: 1.1rem;
+    }
+    .desc-specials li  {
+        font-size: 1rem;
+    }
 }
 
 .blinking {

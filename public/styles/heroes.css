@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .heroes-page__title {
@@ -26,7 +28,7 @@
 }
 
 .hero-avatar {
-    border: 3px solid #fff;
+    border: 4px solid #fff;
     width: 110px;
     height: 110px;
     overflow: hidden;
@@ -47,7 +49,13 @@
 }
 
 .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    color: #fff;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.85),
+                -2px -1px 2px rgba(0, 0, 0, 0.85);
 }
 
 .desc-title {
@@ -58,7 +66,16 @@
 .desc-ability {
     text-align: center;
     margin-bottom: 5px;
-    font-size: .9rem;
+    font-size: .8rem;
+}
+
+.desc-specials {
+    margin: 20px 0;
+}
+.desc-specials li {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: .8rem;
 }
 
 .blinking {

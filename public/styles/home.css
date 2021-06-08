@@ -17,24 +17,6 @@
 				 1px -2px 0 rgba(255, 255, 255, 0.8);
 }
 
-.start-btn {
-    color:  #fff;
-    background: var(--color-pink);
-    border: 3px solid var(--color-pink);
-    border-top-color: var(--color-purple);
-    border-left-color: var(--color-purple);
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: inherit;
-    padding: 10px 40px;
-}
-.start-btn:hover, .start-btn:active {
-    border-color: var(--color-pink);
-    border-bottom-color: var(--color-purple);
-    border-right-color: var(--color-purple);
-}
-
 @media screen and (min-width: 769px) {
     .start-btn:hover {
         border-color: var(--color-pink);

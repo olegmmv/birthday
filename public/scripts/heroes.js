@@ -9,22 +9,30 @@
     /* heroes description */
     const descriptions = {
         oleg: {
-            title: '«Как хорошо, что я свайпнула вправо» – ты в будущем',
+            title: 'Любитель ракет и сладких конфет',
             strength: 8,
             charisma: 9,
             agility: 6,
             charm: 5,
             luck: 4,
-            special: [],
+            specials: [
+                'Способность "маскировка под испанца"',
+                'Отключение режима сна и повышенная выносливость при приближении дедлайна',
+                'Скорость избавления от костылей x2',
+            ],
         },
         asya: {
             title: 'I’m home for your soul',
-            strength: 8,
-            charisma: 9,
-            agility: 6,
-            charm: 5,
-            luck: 4,
-            special: [],
+            strength: 5,
+            charisma: 8,
+            agility: 3,
+            charm: 9,
+            luck: 6,
+            specials: [
+                'Восстанавливает музыкальный слух на 34%',
+                'Вероятность нанесения критического урона сердечкам х3',
+                'Поднимет уровень твоей популярности на 89 очков',
+            ],
         },
     };
 
@@ -35,9 +43,11 @@
     const agilityBlock = document.querySelector('.agility');
     const charmBlock = document.querySelector('.charm');
     const luckBlock = document.querySelector('.luck');
+    const specialsBlock = document.querySelector('.desc-specials');
+    const chooseBtn = document.querySelector('#choose');
 
     const changeInfo = (key) => {
-        const { title, strength, charisma, agility, charm, luck } = descriptions[key];
+        const { title, strength, charisma, agility, charm, luck, specials } = descriptions[key];
         descTitle.innerHTML = title;
 
         strengthBlock.innerHTML = `Сила – ${strength}`;
@@ -45,6 +55,10 @@
         agilityBlock.innerHTML = `Ловкость – ${agility}`;
         charmBlock.innerHTML = `Обаяние – ${charm}`;
         luckBlock.innerHTML = `Удача – ${luck}`;
+
+        specialsBlock.innerHTML = `Особые навыки: <ul><li>${specials.join('</li><li>')}</li></ul>`;
+        chooseBtn.classList.remove('display-none');
+        chooseBtn.setAttribute('href', `/menu?hero=${key}`);
     };
 
     /* selecting hero */

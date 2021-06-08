@@ -1,6 +1,7 @@
 @import url('./home.css');
 @import url('./menu.css');
 @import url('./heroes.css');
+@import url('./info.css');
 
 @font-face {
     font-family: 'PressStart2P';
@@ -88,6 +89,11 @@ body {
         border-color: var(--color-pink);
         border-top-color: var(--color-purple);
         border-left-color: var(--color-purple);
+    }
+    .start-btn:active {
+        border-color: var(--color-pink);
+        border-bottom-color: var(--color-purple);
+        border-right-color: var(--color-purple);
     }
 }
 

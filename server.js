@@ -30,6 +30,9 @@ fastify.get('/menu', async (request, reply) => {
 fastify.get('/heroes', async (request, reply) => {
     return reply.view('heroes');
 });
+fastify.get('/info', async (request, reply) => {
+    return reply.view('info');
+});
 
 const start = async () => {
     try {

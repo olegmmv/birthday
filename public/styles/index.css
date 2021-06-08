@@ -49,7 +49,7 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    padding: 40px 20px;
+    padding: 35px 20px;
 }
 .header {
     display: flex;
@@ -64,7 +64,7 @@ body {
 }
 
 .content {
-    padding-top: 96px;
+    padding-top: 86px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ body {
     text-decoration: none;
     font-family: inherit;
     padding: 10px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .start-btn:hover, .start-btn:active {
     border-color: var(--color-pink);

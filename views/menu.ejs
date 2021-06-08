@@ -1,5 +1,30 @@
 <%- include('header') -%>
 <div class="menu">
-    <img class="menu__img" src="../public/images/menu.png" alt="menu" />
+    <% if (locals.prize) { %>
+        <div class="prize-wrapper black-shadow">
+            Ура! Ты получаешь <span class="prize"><%= locals.prize %></span>
+        </div>
+    <% } %>
+    
+    <% if (locals.showMenu) { %>
+        <img class="menu__img" src="../public/images/menu.png" alt="menu" />
+    <% } else { %>
+        <div id="timer-wrapper" class="timer-wrapper absolute-center">
+            
+        </div>
+    <% } %>
 </div>
+<script type="text/javascript">
+    var i = 0;
+    var txt = 'Уровень откроется 20-го июня в 19:00';
+    var speed = 100;
+
+    (function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById('timer-wrapper').innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    })();
+</script>
 <%- include('footer') -%>

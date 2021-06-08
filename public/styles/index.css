@@ -12,7 +12,11 @@
 :root {
     --color-green: rgb(17, 238, 17);
     --color-pink: rgb(219, 107, 204);
-    --color-purple: rgb(138 37 117);
+    --color-purple: rgb(138, 37, 117);
+    --transparent-black: rgba(0, 0, 0, 0.85);
+    --transparent-pink: rgba(255, 0, 255, 0.85);
+    --transparent-blue: rgba(0, 0, 255, 0.85);
+    --transparent-white: rgba(255, 255, 255, 0.8);
     --animate-duration: 2s;
 }
 
@@ -100,4 +104,16 @@ body {
 .display-none {
     display: none;
 }
-  
+
+.black-shadow {
+    color: #fff;
+    text-shadow: 2px 1px 2px var(--transparent-black),
+                -2px -1px 2px var(--transparent-black);
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

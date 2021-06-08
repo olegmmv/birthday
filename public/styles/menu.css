@@ -1,10 +1,28 @@
 .menu {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .menu__img {
     max-width: 90vw;
-    max-height: 80vh;
+    max-height: 60vh;
+}
+
+.prize-wrapper {
+    padding: 0 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.prize {
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.85),
+                 0 0 2px var(--transparent-black);
+}
+
+.timer-wrapper {
+    text-align: center;
+    min-width: min(70vh, 70vw);
+    line-height: 1.5;
 }

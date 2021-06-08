@@ -24,14 +24,24 @@ fastify.setNotFoundHandler(async (request, reply) => {
 fastify.get('/', async (request, reply) => {
     return reply.view('index');
 });
-fastify.get('/menu', async (request, reply) => {
-    return reply.view('menu');
-});
+
 fastify.get('/heroes', async (request, reply) => {
     return reply.view('heroes');
 });
+
 fastify.get('/info', async (request, reply) => {
     return reply.view('info');
+});
+
+const prizes = {
+    oleg: '+3 к удаче на защите диплома.',
+    asya: '+1 к харизме во время концерта.',
+};
+const tusaDate = new Date('June 20, 2021 19:00:00');
+fastify.get('/menu', async (request, reply) => {
+    const { hero } = request.query;
+    const showMenu = Date.now() >= +tusaDate;
+    return reply.view('menu', { prize: prizes[hero], showMenu });
 });
 
 const start = async () => {

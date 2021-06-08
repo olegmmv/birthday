@@ -59,9 +59,6 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    color: #fff;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.85),
-                -2px -1px 2px rgba(0, 0, 0, 0.85);
 }
 
 .desc-title {

@@ -37,7 +37,7 @@ const prizes = {
     oleg: '+3 к удаче на защите диплома.',
     asya: '+1 к харизме во время концерта.',
 };
-const tusaDate = new Date('June 20, 2021 19:00:00');
+const tusaDate = new Date('June 20, 2021 18:00:00');
 fastify.get('/menu', async (request, reply) => {
     const { hero } = request.query;
     const showMenu = Date.now() >= +tusaDate;
